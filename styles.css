@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(243, 43, 43);
+  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  /* Modificado: Adicionado um gradiente linear */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/banner.png);
+  /* ^--------------- gradiente preto semi-transparente ---------^  ^-- sua imagem --^ */
+
+  background-repeat: no-repeat;
+  background-position: 30% 60%;
+  background-size: cover;
+  box-shadow: 0px 10px 20px 0px #000;
+}
+header img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 40px;
+}
+.title-box h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+.title-box h2 span {
+  color: rgb(236, 236, 73);
+  font-size: 60px;
+}
+.title-box p {
+  font-size: 25px;
+}
+.info-box {
+  justify-content: center;
+  display: flex;
+  padding: 0 40px;
+}
+.infos {
+  background-color: aliceblue;
+  padding: 40px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.infos span {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+.infos a {
+  background-color: #ea1d2c;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 25px;
+  box-shadow: 1px 3px 1px black;
+  text-transform: uppercase;
+  transition: 0.5s;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.infos a img {
+  max-width: 30px;
+  border-radius: 50px;
+}
+.infos a:hover {
+  transform: scale(1.1);
+}
+.infos a:last-child {
+  background-color: #25d366;
+}
+
+.maps {
+  text-align: center;
+  padding: 0;
+}
+.maps h3 {
+  font-size: 30px;
+  line-height: 1;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.maps h3 span,
+em {
+  color: rgb(236, 236, 73);
+}
+footer {
+  text-align: center;
+  padding: 40px;
+  font-weight: 700;
+}
+.redes-sociais {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding-top: 20px;
+}
+.redes-sociais a img {
+  width: 50px;
+  /* Torna o ícone branco */
+  filter: invert(100%);
+  /* Transição para suavizar a animação */
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.redes-sociais a:hover img {
+  /* Tenta simular a cor amarela com uma combinação de filtros */
+  filter: sepia(100%) saturate(300%) hue-rotate(15deg) brightness(1.2)
+    drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.4));
+  /* Aumenta o tamanho do ícone */
+  transform: scale(1.1);
+}
