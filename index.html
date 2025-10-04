@@ -79,7 +79,7 @@ src="https://www.facebook.com/tr?id=1503156171007364&ev=PageView&noscript=1"
         <div class="infos">
           <a
             href="https://www.ifood.com.br/delivery/belo-horizonte-mg/hamburgueria---sergio-lanche-kazzau-xx-pindorama/ea837259-e6df-4291-9fc0-a3c0ccacd8c8"
-            target="_blank"
+            target="_blank" id="link-ifood"
             >Pedir no App Ifood
             <img src="./assets/icons/logo-ifood.webp" alt="Logomarca de ifood"
           /></a>
@@ -126,5 +126,10 @@ src="https://www.facebook.com/tr?id=1503156171007364&ev=PageView&noscript=1"
         /></a>
       </div>
     </footer>
+    <script>
+  document.getElementById('link-ifood').addEventListener('click', function() {
+    fbq('trackCustom', 'CliqueiNoIFood');
+  });
+</script>
   </body>
 </html>
